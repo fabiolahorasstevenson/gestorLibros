@@ -1,13 +1,11 @@
-import { TipoElemento } from "./ClassPadre";
+import { Articulo } from "./ClassArticulo";
 
-export class Libro extends TipoElemento{
-    
+export class Libro extends Articulo {
     private generoLiterario: string;
     private resumen: string;
     private cantPaginas: number;
 
-
-    public constructor (pNombre: string, pAutor: string, pPrecio: number, pGeneroLiterario: string, pResumen: string, pCantPaginas: number){
+    public constructor(pNombre: string, pAutor: string, pPrecio: number, pGeneroLiterario: string, pResumen: string, pCantPaginas: number) {
         super(pNombre, pAutor, pPrecio);
         this.generoLiterario = pGeneroLiterario;
         this.resumen = pResumen;
@@ -37,9 +35,4 @@ export class Libro extends TipoElemento{
     public setCantPaginas(cantPaginas: number): void {
         this.cantPaginas = cantPaginas;
     }
-
-
-    
-
-
 }

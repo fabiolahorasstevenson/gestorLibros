@@ -19,43 +19,38 @@ lista de autores favoritos. Pero hay clientes más exigentes que piden que el
 autor esté en su lista de favoritos y además que el género también este en su 
 lista de géneros favoritos */
 
-export class TipoElemento{
-    
+export class Articulo {
     private nombre: string;
     private autor: string;
     private precio: number;
 
-    constructor (pNombre: string, pAutor: string, pPrecio: number){
+    constructor(pNombre: string, pAutor: string, pPrecio: number) {
         this.nombre = pNombre;
         this.autor = pAutor;
         this.precio = pPrecio;
-
     }
 
-    public getNombre():string{
+    public getNombre(): string {
         return this.nombre;
     }
-    
-    public getAutor(): string{
+
+    public getAutor(): string {
         return this.autor;
     }
 
-    public getPrecio(): number{
+    public getPrecio(): number {
         return this.precio;
     }
 
-   
-    public setNombre(pNombre: string): void{
+    public setNombre(pNombre: string): void {
         this.nombre = pNombre;
     }
 
-    public setAutor (pAutor: string): void{
+    public setAutor(pAutor: string): void {
         this.autor = pAutor;
     }
 
-    public setPrecio (pPrecio: number): void{
+    public setPrecio(pPrecio: number): void {
         this.precio = pPrecio;
     }
-
- 
 }
