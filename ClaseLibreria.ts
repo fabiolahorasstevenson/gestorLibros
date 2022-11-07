@@ -1,7 +1,7 @@
 import {Cliente} from "./ClaseCliente";
-import { TipoElemento } from './ClassPadre';
 import {Revista} from "./ClaseRevista";
 import { Libro } from "./ClaseLibro";
+import { Articulo } from './ClassArticulo';
 
 export class Libreria{
 
@@ -41,9 +41,9 @@ export class Libreria{
         this.clientes.push(clientes);
     }
    
-    public calcularPrecio(cliente:Cliente,TipoElemento:TipoElemento):number{
+    public calcularPrecio(cliente:Cliente,pArticulo:Articulo):number{
         let precioConDescuento:number=0;
-        precioConDescuento=TipoElemento.getPrecio()-(TipoElemento.getPrecio()*cliente.getDescuento())/100;
+        precioConDescuento=pArticulo.getPrecio()-(pArticulo.getPrecio()*cliente.getDescuento())/100;
         return precioConDescuento;
     } 
 

@@ -25,9 +25,9 @@ var Libreria = /** @class */ (function () {
     Libreria.prototype.setClientes = function (clientes) {
         this.clientes.push(clientes);
     };
-    Libreria.prototype.calcularPrecio = function (cliente, TipoElemento) {
+    Libreria.prototype.calcularPrecio = function (cliente, pArticulo) {
         var precioConDescuento = 0;
-        precioConDescuento = TipoElemento.getPrecio() - (TipoElemento.getPrecio() * cliente.getDescuento()) / 100;
+        precioConDescuento = pArticulo.getPrecio() - (pArticulo.getPrecio() * cliente.getDescuento()) / 100;
         return precioConDescuento;
     };
     return Libreria;
