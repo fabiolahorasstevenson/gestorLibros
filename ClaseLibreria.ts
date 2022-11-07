@@ -1,22 +1,19 @@
-import {Cliente} from "./ClaseCliente";
-import { TipoElemento } from './ClassPadre';
-import {Revista} from "./ClaseRevista";
+import { Cliente } from "./ClaseCliente";
+import { Articulo } from './ClassArticulo';
+import { Revista } from "./ClaseRevista";
 import { Libro } from "./ClaseLibro";
 
-export class Libreria{
-
+export class Libreria {
     private libros: Libro[];
     private revistas: Revista[];
     private clientes: Cliente[];
 
-    constructor(pLibros: Libro[], pRevistas: Revista[], pClientes: Cliente[]){
-        this.libros= pLibros;
-        this.revistas= pRevistas;
+    constructor(pLibros: Libro[], pRevistas: Revista[], pClientes: Cliente[]) {
+        this.libros = pLibros;
+        this.revistas = pRevistas;
         this.clientes = pClientes;
-
-
     }
-    
+
     public getLibros(): Libro[] {
         return this.libros;
     }
@@ -40,13 +37,10 @@ export class Libreria{
     public setClientes(clientes: Cliente): void {
         this.clientes.push(clientes);
     }
-   
-    public calcularPrecio(cliente:Cliente,TipoElemento:TipoElemento):number{
-        let precioConDescuento:number=0;
-        precioConDescuento=TipoElemento.getPrecio()-(TipoElemento.getPrecio()*cliente.getDescuento())/100;
+
+    public calcularPrecio(cliente: Cliente, articulo: Articulo): number {
+        let precioConDescuento: number = 0;
+        precioConDescuento = articulo.getPrecio() - (articulo.getPrecio() * cliente.getDescuento()) / 100;
         return precioConDescuento;
-    } 
-
-
-    
+    }
 }

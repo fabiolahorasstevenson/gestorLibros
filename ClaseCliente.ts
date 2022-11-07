@@ -1,16 +1,16 @@
-export class Cliente{
-    private nombreCliente :string;
+export class Cliente {
+    private nombreCliente: string;
     private apellidoCliente: string;
     private dniCliente: string;
     private direccionCliente: string;
-    private telefonoCliente : string;
-    private listaAutores: string[]; 
+    private telefonoCliente: string;
+    private listaAutores: string[];
     private listaGeneros: string[];
     private descuento: number;
 
-    constructor (pNombreCliente: string, pApellidoCliente: string, pDNICliente: string, pDireccionCliente: string, pTelefonoCliente: string,
-        pListaAutores: string[],pListaGeneros: string[], pDescuento: number){
-        this.nombreCliente = pNombreCliente; 
+    constructor(pNombreCliente: string, pApellidoCliente: string, pDNICliente: string, pDireccionCliente: string, pTelefonoCliente: string,
+        pListaAutores: string[], pListaGeneros: string[], pDescuento: number) {
+        this.nombreCliente = pNombreCliente;
         this.apellidoCliente = pApellidoCliente;
         this.dniCliente = pDNICliente;
         this.direccionCliente = pDireccionCliente;
@@ -20,6 +20,7 @@ export class Cliente{
         this.descuento = pDescuento;
 
     }
+
     public getNombreCliente(): string {
         return this.nombreCliente;
     }
@@ -67,22 +68,20 @@ export class Cliente{
     public setListaAutores(listaAutores: string[]): void {
         this.listaAutores = listaAutores;
     }
-    
-    public getListaGeneros():string[]{
+
+    public getListaGeneros(): string[] {
         return this.listaGeneros;
     }
-    
-    public setListaGeneros(listaGeneros: string[]):void{
+
+    public setListaGeneros(listaGeneros: string[]): void {
         this.listaGeneros = listaGeneros;
     }
-    
-    public getDescuento (): number{
+
+    public getDescuento(): number {
         return this.descuento;
     }
-    
-    public setDescuento(pDescuento:number): void{
-        this.descuento= pDescuento;
-    }
 
-    
+    public setDescuento(pDescuento: number): void {
+        this.descuento = pDescuento;
+    }
 }
