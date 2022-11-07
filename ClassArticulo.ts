@@ -19,7 +19,7 @@ lista de autores favoritos. Pero hay clientes más exigentes que piden que el
 autor esté en su lista de favoritos y además que el género también este en su 
 lista de géneros favoritos */
 
-export class TipoElemento{
+export class Articulo{
     
     private nombre: string;
     private autor: string;

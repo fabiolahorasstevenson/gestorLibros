@@ -1,6 +1,6 @@
 import { Libreria } from './ClaseLibreria';
 import { Libro } from './ClaseLibro';
-import { TipoElemento } from './ClassPadre';
+import { Articulo } from './ClassArticulo';
 import { Cliente } from './ClaseCliente';
 import { Revista } from './ClaseRevista';
 

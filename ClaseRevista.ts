@@ -2,12 +2,12 @@ import { TipoElemento } from "./ClassPadre";
 
 export class Revista extends TipoElemento{
     private numero: number;
-    private año: number;
+    private anio: number;
 
-    public constructor(pNombre: string, pAutor: string, pPrecio: number, pNumero: number, pAño: number){
+    public constructor(pNombre: string, pAutor: string, pPrecio: number, pNumero: number, pAnio: number){
         super(pNombre,pAutor,pPrecio);
         this.numero= pNumero;
-        this.año = pAño;
+        this.anio = pAnio;
     }
 
     public getNumero(): number {
@@ -18,12 +18,12 @@ export class Revista extends TipoElemento{
         this.numero = numero;
     }
 
-    public getAñO(): number {
-        return this.año;
+    public getAnio(): number {
+        return this.anio;
     }
 
-    public setAñO(año: number): void {
-        this.año = año;
+    public setAnio(pAnio: number): void {
+        this.anio = pAnio;
     }
 
 

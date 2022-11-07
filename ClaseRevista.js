@@ -19,10 +19,10 @@ exports.Revista = void 0;
 var ClassPadre_1 = require("./ClassPadre");
 var Revista = /** @class */ (function (_super) {
     __extends(Revista, _super);
-    function Revista(pNombre, pAutor, pPrecio, pNumero, pAño) {
+    function Revista(pNombre, pAutor, pPrecio, pNumero, pAnio) {
         var _this = _super.call(this, pNombre, pAutor, pPrecio) || this;
         _this.numero = pNumero;
-        _this.año = pAño;
+        _this.anio = pAnio;
         return _this;
     }
     Revista.prototype.getNumero = function () {
@@ -31,11 +31,11 @@ var Revista = /** @class */ (function (_super) {
     Revista.prototype.setNumero = function (numero) {
         this.numero = numero;
     };
-    Revista.prototype.getAñO = function () {
-        return this.año;
+    Revista.prototype.getAnio = function () {
+        return this.anio;
     };
-    Revista.prototype.setAñO = function (año) {
-        this.año = año;
+    Revista.prototype.setAnio = function (pAnio) {
+        this.anio = pAnio;
     };
     return Revista;
 }(ClassPadre_1.TipoElemento));
